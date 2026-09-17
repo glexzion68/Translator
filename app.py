@@ -4,7 +4,7 @@ from google import genai
 st.set_page_config(page_title="AI Translator", page_icon="🌐")
 st.title("🌐 AI Language & Tone Translator")
 
-API_KEY = "INSERT_GEMINI_API_KEY"  
+API_KEY = st.secrets["GEMINI_API_KEY"]
 client = genai.Client(api_key=API_KEY)
 
 text = st.text_area("Enter text to translate:", placeholder="Type your text here...")
