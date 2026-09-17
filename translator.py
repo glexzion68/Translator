@@ -5,10 +5,9 @@ import os
 from google import genai
 
 def translate_and_adjust_tone(text, target_language, tone):
-    # Place your actual API key starting with AIzaSy here
+
     API_KEY = "INSERT_GEMINI_API_KEY" 
     
-    # Initialize the client with your key
     client = genai.Client(api_key=API_KEY)
 
     prompt = (
